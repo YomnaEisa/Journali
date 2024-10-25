@@ -11,25 +11,39 @@
 import SwiftUI
 
 struct SplashScreenView: View {
-    
+    @State private var navigateToEmptyView = false // State to control navigation
+
     var body: some View {
-
-    ZStack {
-    
-    Color.black.edgesIgnoringSafeArea(.all)
-            
-            LinearGradient(gradient: Gradient(colors: [Color(red: 88 / 255, green: 86 / 255, blue: 215 / 255).opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Image("Icon").imageScale(.large)
+        NavigationView {
+            ZStack {
                 
-                Text("Journali").font(.largeTitle).bold().foregroundStyle(Color.white)
-
-                Text("Your thoughts, your story").foregroundStyle(Color.white)
-
-            } // End of VStack
-        } // End of ZStack
+                Color.black.edgesIgnoringSafeArea(.all)
+                
+                LinearGradient(gradient: Gradient(colors: [Color(red: 88 / 255, green: 86 / 255, blue: 215 / 255).opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Image("Icon").imageScale(.large)
+                    
+                    Text("Journali").font(.largeTitle).bold().foregroundStyle(Color.white)
+                    
+                    Text("Your thoughts, your story").foregroundStyle(Color.white)
+                    
+                } // End of VStack
+                // NavigationLink to handle automatic navigation
+                NavigationLink(destination: EmptyStateView(), isActive: $navigateToEmptyView) {
+                    EmptyView() // Hidden navigation link
+                }
+            } // End of ZStack
+            
+            .onAppear {
+                // Navigate to EmptyStateView after 2 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    navigateToEmptyView = true
+                }
+            }
+            
+        } // End of NavigationView
     } // End of body
 } // End of ContentView
 
