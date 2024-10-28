@@ -10,10 +10,14 @@ import SwiftData
 
 @main
 struct JournaliApp: App {
+   // @StateObject private var viewModel = ViewModel()
+
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-                .modelContainer(for: Model.self) // This makes our app listening to the model
+// .environmentObject(viewModel)
+                .modelContainer(for: Journal.self) // This makes our app listening to the model
+                .preferredColorScheme(.dark)
         }
     }
 }

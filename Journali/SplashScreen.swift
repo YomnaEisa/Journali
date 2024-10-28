@@ -31,7 +31,7 @@ struct SplashScreenView: View {
                     
                 } // End of VStack
                 // NavigationLink to handle automatic navigation
-                NavigationLink(destination: EmptyStateView(), isActive: $navigateToEmptyView) {
+                NavigationLink(destination: MainView(), isActive: $navigateToEmptyView) {
                     EmptyView() // Hidden navigation link
                 }
             } // End of ZStack
