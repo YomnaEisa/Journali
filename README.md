@@ -1,6 +1,6 @@
 # Journali 
 
-**Journali** is a personal journaling app built with SwiftUI, utilizing SwiftData and Core Data to persist entries. Journali allows users to create, edit, bookmark, and manage journal entries with ease, providing a seamless and organized experience.
+**Journali** is a personal journaling app built with SwiftUI, utilizing SwiftData to persist entries. Journali allows users to create, edit, bookmark, and manage journal entries with ease, providing a seamless and organized experience.
 
 ## Table of Contents
 - [Features](#features)
@@ -18,7 +18,7 @@
 - **Bookmark Feature**: Mark important entries as "bookmarked" for quick access.
 - **Filtered Views**: View all entries, bookmarked entries, or sorted entries by date.
 - **Custom Theming**: The app incorporates custom colors and themes for a personalized look.
-- **Persistent Storage**: Journal entries are saved and persist between sessions using SwiftData and Core Data.
+- **Persistent Storage**: Journal entries are saved and persist between sessions using SwiftData.
 
 ## Installation
 
