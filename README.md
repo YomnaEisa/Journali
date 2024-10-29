@@ -7,8 +7,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Architecture](#architecture)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -60,21 +58,6 @@ Journali follows the MVVM (Model-View-ViewModel) design pattern:
 - **ViewModel.swift**: Contains logic for adding, editing, deleting, and filtering journal entries.
 - **MainView.swift**: Displays journal entries and handles navigation.
 - **Journal.swift**: Data model representing a single journal entry.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
-
-### How to Contribute
-1. Fork the project.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add YourFeature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
