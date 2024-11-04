@@ -57,7 +57,7 @@ Journali follows the MVVM (Model-View-ViewModel) design pattern:
 
 - **ViewModel.swift**: Contains logic for adding, editing, deleting, and filtering journal entries.
 - **MainView.swift**: Displays journal entries and handles navigation.
-- **Journal.swift**: Data model representing a single journal entry.
+- **model.swift**: Data model representing a single journal entry.
 
 ---
 
