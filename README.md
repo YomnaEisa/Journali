@@ -27,7 +27,7 @@
     ```
 
 2. Open the project in Xcode:
-   - Double-click the `Journali.xcodeproj` file to open in Xcode.
+   Double-click the `Journali.xcodeproj` file to open in Xcode.
    
 3. Build and run the project on a simulator or physical device with iOS 15 or later.
 
@@ -39,7 +39,8 @@
 
 ### Adding/Editing Entries
 - Press the plus button to create a new entry. Use the provided fields to add a title, content, and date.
-- Press "Save" to save the entry or "Cancel" to discard changes.
+- Press "Save" to save the entry or "Cancel" to discard.
+- Swipe left on existing journals to enter edit mode, press "Save" to save the edits or "Cancel" to discard changes.
 
 ### Bookmarks
 - Tap the bookmark icon next to each entry to mark it as important.
